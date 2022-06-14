@@ -1,0 +1,15 @@
+/* fondos */
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width: 500px) {
+        background-image: url(../src/Multimedia/Fotos/fondograficacelular.jpg);
+    }    
+    @media screen and (min-width: 501px) and (max-width: 800px) {
+        background-image: url(../src/Multimedia/Fotos/fondograficatablet.jpg);
+    }       
+    @media screen and (min-width: 801px) {
+        background-image: url(../src/Multimedia/Fotos/fondografica.jpg); 
+    }
+}
+/* Fin Fondos */

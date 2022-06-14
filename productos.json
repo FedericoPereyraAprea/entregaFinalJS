@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "nombre": "Taza magica personalizada",
+        "precio": 500,
+        "stock": 30,
+        "imagen": "./src/Multimedia/Fotos/productotaza.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Resma A4 Autor",
+        "precio": 650,
+        "stock": 87,
+        "imagen": "./src/Multimedia/Fotos/productoresmaa4.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Resma A3 Autor",
+        "precio": 900,
+        "stock": 64,
+        "imagen": "./src/Multimedia/Fotos/productoresmaa3.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Aceite de Coco",
+        "precio": 750,
+        "stock": 25,
+        "imagen": "./src/Multimedia/Fotos/productococo.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Dulce de leche chico",
+        "precio": 340,
+        "stock": 18,
+        "imagen": "./src/Multimedia/Fotos/productodulcechico.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Dulce de leche grande",
+        "precio": 790,
+        "stock": 18,
+        "imagen": "./src/Multimedia/Fotos/productodulcegrande.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Sello automatico",
+        "precio": 450,
+        "stock": 42,
+        "imagen": "./src/Multimedia/Fotos/productosello.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Yerba don arregui",
+        "precio": 350,
+        "stock": 20,
+        "imagen": "./src/Multimedia/Fotos/productoyerba.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Yerba kalena",
+        "precio": 450,
+        "stock": 20,
+        "imagen": "./src/Multimedia/Fotos/productoyerba2.jpg"
+    }
+]

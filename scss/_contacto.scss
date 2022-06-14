@@ -1,0 +1,61 @@
+/* Inicio página contacto */
+.containerContacto {
+    margin-top: 7%;
+    display: grid;
+    justify-content: center;  
+    .tituloRegistro, .desta {
+        @extend %tituloDestacado;
+        @media screen and (max-width: 400px) {
+            padding-top: 25%;   
+        }
+        @media screen and (min-width: 401px) and (max-width: 800px) {
+            padding-top: 50px;
+        }
+    }
+    .contactoUsuario {
+        color: $fontColorPrincipal;
+        font-size: 20px;
+        font-weight: $fontWeight;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    .inputs {
+        width: 35vw;
+        @extend %inputsBorders;
+        @media screen and (max-width: 400px) {
+            width: auto;   
+        }
+        @media screen and (min-width: 401px) and (max-width: 800px) {
+            width: auto;
+        }
+    }
+    .consultaInput {
+        width: 35vw;
+        height: 10vw;
+        @extend %inputsBorders;
+        @media screen and (max-width: 400px) {
+            width: auto;   
+        }
+        @media screen and (min-width: 401px) and (max-width: 800px) {
+            width: auto;
+        }
+    }
+    .botonArchivoContacto {
+        display: inline-block;
+        @extend %botonesContacto;
+        margin-top: 10px;
+    }
+    .textoTamaño {
+        color: $fontColorPrincipal;
+        font-weight: $fontWeight;
+        display: flex;
+        font-size: 12px;    
+    }
+    .botonEnviarContacto {
+        justify-self: end;
+        @extend %botonesContacto;
+        margin-bottom: 15px;
+    }
+}
+/* Fin página contacto */

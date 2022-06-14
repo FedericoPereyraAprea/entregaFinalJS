@@ -1,0 +1,137 @@
+/* Inicio footer */
+footer {
+    font-family: $fontFamily;
+    background-image: url(../src/Multimedia/Fotos/fondofooter.png);
+    padding-left: 35px;
+    @media screen and (max-width: 500px) {
+        padding-left: 5px;
+        padding-right: 2px;
+    }
+    @media screen and (min-width: 501px) and (max-width: 600px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    div {
+        @include container(flex, space-between);
+        align-items: baseline;
+        .pre {
+            color: $fontColorPrincipal;
+            padding-top: 25px;
+            font-size: 15px;
+            font-style: italic;
+            font-weight: $fontWeight;       
+        }
+        .graficaFooter {
+            margin-right: 38px;
+            text-decoration: none;
+            color: $fontColorPrincipal;
+            @media screen and (max-width: 500px) {
+                margin-right: 15px;
+                text-align: right;
+                color: nth($colores, 2);    
+            } 
+            @media screen and (min-width: 501px) and (max-width: 600px) {
+                margin-right: 0;
+            }       
+        }
+    }
+    p {
+        color: $fontColorPrincipal; 
+        margin-top: 5px; 
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-style: $fontstyle;
+        font-weight: $fontWeight;  
+    }
+    .footer-input {
+        width: 25vw;
+        border-radius: 15px;
+        border-color: nth($colores, 3);
+        @media screen and (max-width: 500px) {
+            width: 45vw;
+        }
+        @media screen and (min-width: 501px) and (max-width: 600px) {
+            width: 31vw;
+        }  
+    }
+    .enviarConsulta {
+        @include container(flex, center); 
+        width: 80px;
+        margin-top: 15px;
+        border-radius: 15px;
+        border-color: nth($colores, 1);
+        @media screen and (max-width: 500px) {
+            margin-top: 19px;
+            margin-bottom: 12px;     
+        } 
+        @media screen and (min-width: 501px) and (max-width: 800px) {   
+            margin: 15px 10px 0px 52px;    
+        }     
+    }
+    .finalFooter {
+        .horarios {
+            position: relative;
+            top: -30px;
+            @media screen and (max-width: 500px) {
+                font-size: 12px;
+                top: -16px;
+            } 
+            @media screen and (min-width: 501px) and (max-width: 600px) {
+                margin-bottom: 0;
+                font-size: 10px;
+                margin-top: 43px;
+            } 
+            @media screen and (min-width: 601px) and (max-width: 800px) {
+                font-size: 16px;    
+            }   
+        }
+        div {
+            @include container(flex, space-between);
+            @media screen and (max-width: 500px) {
+                max-width: 200px;
+            }
+            .mapa {
+                position: relative;
+                left: 70%;
+                bottom: 2.5em;
+                max-width: 26%;
+                &:hover {
+                    transform: scale(2) translate(-55px, -25px);
+                    transition: all 2s;    
+                } 
+                @media screen and (max-width: 500px) {
+                    display: none;
+                }
+                @media screen and (min-width: 501px) and (max-width: 600px) {
+                    margin-right: 0;
+                    left: 74%;
+                } 
+                @media screen and (min-width: 601px) and (max-width: 800px) {
+                    @include container(flex, right);
+                    left: 55%;
+                    max-width: 37%;         
+                }   
+            }
+            .direccion {
+                padding: 15px 45px 0px 0px;
+                @media screen and (max-width: 500px) {
+                    color: nth($colores, 2);
+                    font-size: 14px;
+                    padding-right: 10px; 
+                    text-align: right;
+                    margin: 0px;  
+                } 
+                @media screen and (min-width: 501px) and (max-width: 600px) {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 15px;       
+                } 
+                @media screen and (min-width: 601px) and (max-width: 800px) {
+                    font-size: 16px;    
+                }      
+            }
+        }
+        
+    }
+}
+/* Fin footer */

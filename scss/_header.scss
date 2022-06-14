@@ -1,0 +1,82 @@
+/* Inicio header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    font-family: $fontFamily;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    nav {
+        div {
+            .titulo {
+                font-weight: $fontWeight;
+                font-size: 2rem;
+                padding: 10px;
+                text-align: center;
+            }
+            div {
+                ul {
+                    width: 100%;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    text-align: center;
+                    .menu {
+                        &:hover {
+                            transform:scale(2);
+                        }
+                        .enlaces {
+                            flex-wrap: wrap;
+                            color: $fontColorSecundario;
+                            font-weight: $fontWeight;      
+                            text-decoration: none;
+                        }
+                    }
+                    li {
+                        ul {
+                            .inicio {
+                                text-decoration: none;
+                                 margin-right: 5px;
+                                 color: $fontColorPrincipal; 
+                                &:hover {
+                                    color: nth($colores, 3);;
+                                }   
+                            }
+                            .inicioDeSesion {
+                                text-align: center;
+                                p {
+                                    padding: 0;
+                                    margin: 0;
+                                }
+                                Input {
+                                    border-radius: 5px;
+                                    width: 155px;
+                                }
+                                .enviarUsuario {
+                                    margin-top: 5px;
+                                    width: 70px;
+                                    &:hover {
+                                        background-color: $fontColorPrincipal;
+                                        color: nth($colores, 2);
+                                    }
+                                }
+                            }
+                            .registro {
+                                text-decoration: none;
+                                margin-top: 5px;
+                                color: $fontColorSecundario;    
+                            }
+                         }
+                     }
+                     .carritoLogo {
+                        width: 3%;
+                     }
+                 }
+            }
+         }
+     }
+}
+/* Fin header */

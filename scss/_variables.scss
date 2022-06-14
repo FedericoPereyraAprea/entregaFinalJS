@@ -1,0 +1,118 @@
+/* Inicio de las variables */
+
+// tipografia
+$fontFamily: 'Roboto', sans-serif;
+$fontColorPrincipal: #43be4d;
+$fontColorSecundario: white;
+$fontWeight: bold;
+$fontstyle: italic;
+
+// Fondo
+$bgImagePc: url(../src/Multimedia/fotos/fondografica.jpg);
+$bgImageTablet: url(../src/Multimedia/Fotos/fondograficatablet.jpg);
+$bgImageCel: url(../src/Multimedia/Fotos/fondograficacelular.jpg);
+
+// Imagenes
+$anchoproductos: 22%;
+$anchoQuienesSomosImg: 90%;
+
+/* Efectos */
+@keyframes changeColor {
+    0% {
+        color:rgb(255, 1, 255);
+    }
+    50% {
+        color:rgb(0, 255, 229);
+    }
+    100% {
+        color:coral
+    }
+}
+@keyframes tituloPablo {
+    0% {
+        color:rgb(231, 16, 16);
+    }
+    50% {
+        color:rgb(22, 3, 129);
+    }
+    100% {
+        color:rgb(238, 16, 16)
+    }
+}
+@keyframes tituloFede {
+    0% {
+        color:rgb(2, 21, 197);
+    }
+    50% {
+        color:rgb(243, 219, 4);
+    }
+    100% {
+        color:rgb(2, 21, 197)
+    }
+}
+
+// Listas
+$colores:
+#43be4d,
+white,
+cornflowerblue,
+red;
+
+// operaciones 
+@mixin container($display, $justify) {
+    display: $display;
+    justify-content: $justify;
+}
+@mixin mediaCarousel($minW, $marT) {
+    min-width: $minW;
+    margin-top: $marT;
+}
+@mixin gridSub($grid, $temR) {
+    display: $grid;
+    grid-template-rows: $temR;
+}
+
+/* Extends */
+%botonesContacto {
+    border: 2px solid darken(nth($colores, 3), 20%);
+    font-size: 12px;
+    width: 80px;
+    border-radius: 5px;
+    &:hover {
+        background-color: $fontColorPrincipal;
+        color: nth($colores, 2);
+    }
+}
+%tituloDestacado {
+    color: $fontColorPrincipal;
+    display: flex;
+    justify-content: center;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    font-style: italic;
+    &:hover {
+        animation: changeColor 4s;
+    }
+}
+%infoPersonas {
+    color: $fontColorPrincipal;
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 140px;
+    font-weight: $fontWeight;
+    font-style: italic; 
+    @media screen and (max-width: 500px) {
+        font-size: 14px;
+        margin: 0;
+    }
+}
+%inputsBorders {
+    border: 2px solid darken($fontColorPrincipal, 20%);
+    border-radius: 15px;
+}
+%textoProductos {
+    color: $fontColorPrincipal;
+    font-weight: $fontWeight; 
+    font-size: 25px;
+}
+/* Fin de las variables */
